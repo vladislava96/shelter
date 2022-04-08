@@ -1,0 +1,68 @@
+.modal-window {
+    position:fixed;
+    width: 952px;
+    height: 552px;
+    display: flex;
+    z-index: 20;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(-20px);
+    &.modal-window_show {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .modal {
+        margin-top: 52px;
+        width: 900px;
+        height: 500px;
+        border-radius: 9px;
+        background-color: $color-light-s;
+        display: flex;
+        justify-content: space-between;
+        .modal__content {
+            width: 350px;
+            height: 362px;
+            margin-top: 50px;
+            margin-right: 20px;
+            h3 {
+                color: black;
+            }
+            h4 {
+                padding-top: 10px;
+                color: black;
+            }
+            h5 {
+                margin: 0;
+                padding-top: 40px;
+                color: black;
+            }
+            .modal__content__list{
+                padding-inline-start: 15px;
+                margin-top: 40px;
+                ::marker {
+                    color: $color-primary;
+                    font-size: 14px;
+                }
+                font-size: 1.5em;
+                font-family: $family-main;
+                color: black;
+                li {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+}
+
+.blackout {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 10;
+}

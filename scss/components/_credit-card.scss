@@ -1,0 +1,20 @@
+.credit-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+    width: 349px;
+    top: 147px;
+    border-radius: 9px;
+    padding: 10px, 15px;
+    background: $color-primary;
+    margin-bottom: 20px;
+    @media (max-width: 360px) {
+       max-width: 281px; 
+       margin: 0 auto;
+    }
+
+    object {
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,65 @@
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: $family-main;
+    font-weight: $weight-text;
+    font-style: $style-text;
+    font-size: 3.2em;
+    color: $color-primary;
+    letter-spacing: 6%;
+}
+.logo_subtitle {
+    padding-top: 10px;
+    font-family: $family-main;
+    font-weight: $weight-text;
+    font-style: $style-text;
+    font-size: 1.3em;
+    color: $color-primary;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: $family-main;
+    font-weight: $weight-text;
+    font-style: $style-text;
+    font-size: 4.4em;
+    color: $color-light-xl;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: $family-main;
+    font-weight: $weight-text;
+    font-style: $style-text;
+    font-size: 3.5em;
+    color: $color-dark-l;
+}
+.contacts {
+    color: $color-light-xl;
+}
+
+h4 {
+    font-family: $family-main;
+    font-weight: $weight-text;
+    font-style: $style-text;
+    font-size: 2.0em;
+    line-height: 23px;
+    color: $color-dark-l;
+    padding: 0;
+    margin: 0;
+}
+.contacts__content {
+    color: $color-primary;
+    padding-left: 20px;
+}
+
+h5 {
+    margin: 20px 0px;
+    font-family: $family-main;
+    font-weight: $weight-text;
+    font-style: $style-text;
+    font-size: 1.5em;
+    color: $color-dark-l;
+}

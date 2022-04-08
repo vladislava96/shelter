@@ -1,0 +1,49 @@
+@mixin transform($color, $size, $height, $text) {
+    font-family: $family-paragraph;
+    font-weight: 400px;
+    color: $color;
+    font-size: $size;
+    line-height: $height;
+    font-style: $text;
+}
+
+.about__p {@include transform($color-dark-xl, 1.5em, 24px, $style-text)};
+.text {@include transform($color-dark-s, 1.5em, 24px, $style-text)};
+.donation-text {@include transform($color-dark-m, 1.2em, 18px, $style-text-i)};
+
+
+@media (max-width: 768px) {
+    .start-screen_text  {
+        padding: 45px 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .start-screen_text  {
+        max-width: 300px;
+        margin: 0 auto;
+        padding:45px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .donation-description  {
+        text-align: justify;
+        margin: 20px 0;
+    }
+}
+
+.pet-name {
+    font-family: $family-main;
+    font-weight: 400px;
+    font-size: 2.0em;
+    color: $color-dark-l;
+    margin: 30px 0;
+}
+
+// .start-screen__content {
+//     margin-top: 42px;
+//     margin-bottom: 42px;
+// }
+

@@ -1,0 +1,31 @@
+.card {
+    display: inline-block;
+    text-align: center;
+    background-color: $color-light-s;
+    height: 435px;
+    transition: 1s;
+    border-radius: 9px;
+    &.card_show{
+        opacity: 1;
+    }
+    button{
+        margin-bottom: 30px;
+    }
+}
+
+.our-pets__cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        max-width: 580px;
+        height: 1365px;
+    }
+    @media (max-width: 360px) {
+        max-width: 270px;
+    }
+}
+

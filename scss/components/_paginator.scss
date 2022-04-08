@@ -1,0 +1,26 @@
+.paginator {
+    margin: 45px auto 100px;
+    width: 340px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 360px) {
+        max-width: 300px;
+        margin: 42px auto;
+    }
+}
+
+.paginator__button {
+    width: 52px; 
+}
+
+.inactive {
+    width: 52px;
+    border: 2px solid $color-dark-s;
+    color: $color-dark-s;
+    cursor: auto;
+    &:hover {
+        background: none;
+        border: 2px solid $color-dark-s;
+    }
+}

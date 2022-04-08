@@ -1,0 +1,146 @@
+.header-content {
+    max-width: 1200px;
+    height: 60px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 30;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        max-width: 708px;
+        padding-top: 30px;
+        margin-left: 10px;
+        margin-right: 53px;
+        margin-bottom: 60px;
+    }
+}
+
+ul.header-content__menu {
+    display: flex;
+    li {
+        margin-left: 35px;
+    }
+    @media(max-width:360px) {
+        display: none;
+    }
+}
+
+
+ul.header-content__menu {
+    li {
+        list-style: none;
+        &.active {
+            border-bottom: solid 3px $color-primary;
+        }
+        a {
+            text-decoration: none;
+            transition: all 0.5s ease;
+            @include transform($color-dark-s, 1.5em, 2.4em, $style-text);
+        }
+    }
+    @media(max-width:360px) {
+        display: none;
+    }    
+}
+
+.header-content__subtitle {
+    padding-top: 10px;
+    color: $color-light-xl;
+    font-family: $family-paragraph;
+    font-size: 1.3em;
+    letter-spacing: 10%;
+}
+
+.header-ourpet {
+    max-width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 0;
+    @media (max-width: 768px) {
+        max-width: 708px;
+    }
+    @media (max-width: 360px) {
+        max-width: 260px;
+        margin-left: 10px;
+        margin-right: 50px;
+    }
+}
+
+
+.header-ourpet__title_black {
+    margin: 0;
+    padding: 0;
+    font-family: $family-main;
+    font-weight: $weight-text;
+    font-style: $style-text;
+    font-size: 3.2em;
+    color: $color-dark-l;
+    letter-spacing: 6%;
+}
+
+.header-ourpet__subtitle_black {
+    padding-top: 10px;
+    margin: 0;
+    font-family: $family-main;
+    font-weight: $weight-text;
+    font-style: $style-text;
+    font-size: 1.3em;
+    color: $color-dark-3xl;
+}
+
+.header-ourpet__menu{
+    display: flex;
+    li {
+        margin-left: 35px;
+    }
+    @media(max-width:360px) {
+        display: none;
+    }  
+}
+
+ul.header-ourpet__menu {
+    li {
+        list-style: none;
+        &.active-ourpet {
+            border-bottom: solid 3px $color-primary;
+            a {
+                color: $color-dark-3xl;    
+            }
+        }
+        a {
+        text-decoration: none;
+        @include transform($color-dark-l, 1.5em, 2.4em, $style-text);
+        }
+        @media(max-width:360px) {
+            display: none;
+        }
+    }    
+}
+
+.active {
+    color: $color-dark-3xl;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1280px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content__logo{
+    text-align: right;
+}
+
+.header-ourpet__logo {
+    text-align: right;
+}

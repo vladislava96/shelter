@@ -1,0 +1,201 @@
+//1
+
+.start-background {
+    background: $start-background;
+}
+
+.start-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: 1015px;
+        padding-top: 0px;
+        img {
+            width: 569px;
+            height: 593px;
+            bottom: 0px;
+        }
+    }
+    @media (max-width: 360px) {
+        max-width: 300px;
+        height: 673px;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        img {
+            padding-left: 10px;
+            width: 260px;
+            height: 272px;
+        }
+    }
+}
+
+.start-screen__content {
+    width: 460px;
+    padding-bottom: 100px;
+
+    @media (max-width: 360px) {
+        margin-bottom: 105px;
+        margin-top: 0px;
+        padding: 0;
+        height: 296px;
+        h2 {
+            font-size: 2.5em;
+            line-height: 130%;
+        }
+        p {
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+//2
+
+.light-xl {
+    background-color: $color-light-xl;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px;
+    height: 408px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    @media (max-width: 768px){
+        flex-direction: column-reverse;
+        max-width: 437px;
+        height: 868px;
+        margin: 0 auto;
+    }
+    @media (max-width: 360px){
+        flex-direction: column-reverse;
+        max-width: 300px;
+        height: 875px;
+        margin: 0 auto;
+        padding: 42px 0;
+        h3 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+.about__text {
+    max-width: 430px;
+}
+
+//3
+
+.light-l {
+    background-color: $color-light-l;
+}
+
+.our-friends {
+    max-width: 1200px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin: 0 auto;
+    @media (max-width: 360px){
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+}
+
+@media (max-width: 360px){
+    h3 {
+        font-size: 25px;
+    }
+}
+//4
+
+.help-content {
+    max-width: 1200px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin: 0 auto;
+    @media (max-width: 360px){
+        margin-top: 42px;
+        margin-bottom: 42px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 661px;
+    }
+}
+
+//5
+
+.donation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 915px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        max-width: 505px;
+    }
+    @media (max-width: 360px) {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+    img {
+        @media (max-width: 360px) {
+            width: 260px;
+            height: 135.2px;
+            margin-top: 22px;
+        } 
+    }
+}
+
+.donstion-content {
+    width: 380px;
+    float: left;
+    @media (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+    @media (max-width: 360px) {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        h4 {
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+
+
+//our pets
+
+.our-pets {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: $color-light-l;
+}
+
+ .our-pets__content {
+    text-align: center;
+    padding-top: 80px;
+    @media (max-width: 360px) {
+        max-width: 300px;
+        padding-top: 42px;
+    }
+}

@@ -1,0 +1,65 @@
+button {
+    border: none;
+    border-radius: 100px;
+    color: $color-dark-3xl;
+    font-family: $family-main;
+    font-size: 1.7em;
+    font-style: $style-text;
+    font-weight: $weight-text;
+    line-height: 2.21em;
+    background-color: $color-light-s;
+    border: 2px solid $color-primary;
+    height: 52px;
+    width: 187px;
+    transition: all 0.5s ease; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $color-primary-light;
+    border: $color-primary-light;
+}
+
+.lets {
+    background-color: $color-primary;
+    border: none;
+    width: 207px;
+    height: 52px;
+    transition: all 0.5s ease;
+    a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: $color-dark-3xl;
+    font-family: $family-main;
+    font-size: 17px;
+    }
+}
+
+.our-friends__rest {
+    background-color: $color-primary;
+    border: none;
+    height: 52px;
+    width: 261px;
+    a {
+        text-decoration: none;
+        color: $color-dark-3xl;
+        font-family: $family-main;
+    }
+}
+
+.slaider__left {
+    width: 52px;
+    z-index: 2;
+}
+
+.slaider__right {
+    width: 52px;
+    z-index: 2;
+}
+
+.modal__close {
+    width: 52px;
+    margin-left: -10px;
+    background: none;
+}
+
