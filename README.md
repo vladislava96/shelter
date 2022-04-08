@@ -1,1 +1,1 @@
-https://vladislava96.github.io/shelter/
+https://vladislava96.github.io/shelter/html/
