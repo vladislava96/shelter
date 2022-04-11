@@ -4,36 +4,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @media (max-width: 768px){
+    @media (max-width: 840px){
         display: flex;
         justify-content: space-between;
         max-width: 630px;
         height: 449px;
         margin-top: 60px;
     }
-    @media (max-width: 360px){
+    @media (max-width: 509px){
         height: 585px;
         max-width: 290px;
         margin-top: 12px; 
         margin-bottom: 42px;
     }
 }
-
-
-
 .list__card {
     display: inline-block;
     text-align: center;
     vertical-align: bottom;
     margin: 0 50px;
     padding: 58px 5px 0px 5px;
-    @media (max-width: 768px){
+    @media (max-width: 840px){
         display: block;
         width: 170px;
         margin: 0px;
         padding: 0;
     }
-    @media (max-width: 360px){
+    @media (max-width: 509px){
         display: block;
         max-width: 130px;
         height: 87px;
@@ -42,18 +39,15 @@
         text-align: center;
     }
     h4{
-        @media (max-width: 360px){
+        @media (max-width: 509px){
             font-size: 15px;
         }
     }
 }
-
-
-
 .list__svg {
     height: 60px;
     margin-bottom: 30px;
-    @media (max-width: 360px){
+    @media (max-width: 509px){
         height: 50px;
         width: 50px;
         margin: 0 auto 20px;

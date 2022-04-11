@@ -7,12 +7,12 @@
     background-color: $color-light-l;
     z-index: 1;
 }
-@media(max-width:768px) {
+@media(max-width:1100px) {
     .slaider__cards {
         max-width: 580px;
     }
 }
-@media(max-width:360px) {
+@media(max-width:690px) {
     .slaider__cards {
         max-width: 270px;
     }
@@ -22,14 +22,14 @@
     max-width: 1200px;
     height: 435px;
     margin: 60px auto;
-    @media(max-width:768px) {
+    @media(max-width:1100px) {
         max-width: 708px;
         flex-direction: column;
         align-items: center;
         height: 437px;
         margin: 42px auto 60px;
     }
-    @media(max-width:360px) {
+    @media(max-width:690px) {
         height: 507px;
         margin: 42px auto;
     }
@@ -46,11 +46,11 @@
     //background-color: green;
     position: relative;
     left: -360px;
-    @media(max-width:768px) {
+    @media(max-width:1100px) {
         max-width: 2440px;
         left: -310px;
     }
-    @media(max-width:360px) {
+    @media(max-width:690px) {
         max-width: 2160px;
         left: -270px;
     }
@@ -63,11 +63,11 @@
     display: flex;
     justify-content: space-between;
     z-index: 10;
-    @media(max-width:768px) {
+    @media(max-width:1100px) {
         max-width: 708px;
         //min-width: 306px;
     }
-    @media(max-width:360px) {
+    @media(max-width:690px) {
         margin: 20px auto 0;
         max-width: 184px;
         position: static;

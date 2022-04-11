@@ -7,6 +7,14 @@
     transition: 1s;
     opacity: 0;
     transform: translateY(-20px);
+    @media (max-width: 768px) {
+        width: 682px;
+        height: 402px;
+    }
+    @media (max-width: 690px) {
+        width: 271px;
+        height: 393px;
+    }
     &.modal-window_show {
         opacity: 1;
         transform: translateY(0px);
@@ -19,35 +27,112 @@
         background-color: $color-light-s;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 768px) {
+            width: 630px;
+            height: 350px;
+            overflow-y: auto;
+        }
+        @media (max-width: 690px) {
+            width: 240px;
+            height: 341px;
+            display: block;
+            overflow-y: auto;
+        }
+        img {
+            @media (max-width: 786px) {
+                width: 350px;
+                height: 350px;
+            }
+            @media (max-width: 690px) {
+                display: none;
+            }
+        }
         .modal__content {
             width: 350px;
             height: 362px;
             margin-top: 50px;
             margin-right: 20px;
+            @media (max-width: 768px) {
+                width: 260px;
+                height: 303px;
+                margin-top: 10px;
+                margin-left: 11px;
+                margin-right: 9px;
+            }
+            @media (max-width: 690px) {
+                width: 220px;
+                height: 321px;
+                text-align: center;
+                margin: 0 auto;
+            }
             h3 {
                 color: black;
+                @media (max-width: 768px) {
+                    font-size: 3.5em;
+                    //padding-top: 10px
+                }
+                @media (max-width: 690px) {
+                    font-size: 3.5em;
+                    padding-top: 10px
+                }
             }
             h4 {
                 padding-top: 10px;
                 color: black;
+                @media (max-width: 768px) {
+                    font-size: 2.0em;
+                    padding-top: 10px;
+                }
+                @media (max-width: 690px) {
+                    font-size: 2.0em;
+                    padding-top: 10px;
+                }
             }
             h5 {
                 margin: 0;
                 padding-top: 40px;
                 color: black;
+                @media (max-width: 768px) {
+                    font-size: 1.3em;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    }
+                @media (max-width: 690px) {
+                font-size: 1.5em;
+                padding-top: 20px;
+                padding-bottom: 24px;
+                text-align: justify;
+                }
             }
+            
             .modal__content__list{
                 padding-inline-start: 15px;
                 margin-top: 40px;
+                font-size: 1.5em;
+                font-family: $family-main;
+                color: black;
                 ::marker {
                     color: $color-primary;
                     font-size: 14px;
                 }
-                font-size: 1.5em;
-                font-family: $family-main;
-                color: black;
                 li {
                     padding: 5px 0;
+                    @media (max-width: 690px) {
+                        margin-top: 0px;
+                        padding: 3px 0;
+                    }
+                }
+                @media (max-width: 768px) {
+                    margin-top: 0px;
+                    padding-inline-start: 10px;
+                    text-align: start;
+                    margin-left: 3px;
+                }
+                @media (max-width: 690px) {
+                    margin-top: 0px;
+                    padding-inline-start: 10px;
+                    text-align: start;
+                    margin-left: 3px;
                 }
             }
         }

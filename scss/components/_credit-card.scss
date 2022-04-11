@@ -9,10 +9,14 @@
     padding: 10px, 15px;
     background: $color-primary;
     margin-bottom: 20px;
-    @media (max-width: 360px) {
+    @media (max-width: 393px) {
        max-width: 281px; 
        margin: 0 auto;
     }
+    @media (max-width: 280px) {
+        max-width: 260px; 
+        margin: 0 auto;
+     }
 
     object {
         margin-right: 15px;

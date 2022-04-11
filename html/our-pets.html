@@ -116,7 +116,35 @@
             <img src="../img/footer-puppy.png" alt="Puppy">
         </div>
     </footer>
-    <script src="../js/burger copy.js"></script>
-    <script src="../js/app copy.js"></script>
+
+    <div class="burger-menu burger-menu_hidden">
+        <header class = "header-content">
+            <div class="header-content__logo">
+                <h1>Cozy House</h1>
+                <div class="header-content__subtitle">Shelter for pets in Boston</div>  
+            </div>
+            <nav>
+                <div id="close" class="burger">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </div>     
+            </nav>
+        </header>
+        <nav>
+            <ul class="burger-menu__list">
+                <li><a href="index.html">About the shelter</a></li>
+                <li class="active"><a href="our-pets.html">Our pets</a></li>
+                <li><a href="index.html#help">Help the shelter</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>     
+        </nav>
+    </div>
+    <div class="blackout-burger"></div>
+
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/paginator.js"></script>
+    <script src="../js/burger.js"></script>
 </body>
 </html>

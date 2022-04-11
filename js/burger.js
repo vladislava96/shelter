@@ -1,75 +1,59 @@
-const burgerButton = document.getElementById('open');
-const bodyB = document.querySelector('body');
+class Burger {
+    constructor() {
+        this.bodyB = document.querySelector('body')
+        this.burgerMenu = document.querySelector('.burger-menu')
+        this.burgerOpenButton = document.getElementById('open')
+        this.burgerCloseButton = document.getElementById('close')
+        this.blackoutBurger = document.querySelector('.blackout-burger')
 
-burgerButton.addEventListener('click', () => {
-    burgerButton.classList.add('active-burger');
+        this.onWindowResize();
 
-    const burgerMenu = document.createElement('div');
-    burgerMenu.classList = 'burger-menu';
-    
-    const headerContent = document.createElement('header');
-    headerContent.classList = 'header-content';
+        const liAll = document.querySelectorAll('li');
+        for(const li of liAll) {
+            li.addEventListener('click', () => this.onMenuItemClick()) 
+        }
 
-    const headerContentLogo = document.createElement('header');
-    headerContentLogo.classList = 'header-content__logo';
-    headerContentLogo.innerHTML = '<h1>Cozy House</h1><div class="header-content__subtitle">Shelter for pets in Boston</div'
+        this.burgerOpenButton.addEventListener('click', () => this.onBurgerOpenButtonClick())
+        this.burgerCloseButton.addEventListener('click', () => this.onBurgerCloseButtonClick())
+        window.addEventListener('resize', () => this.onWindowResize())
 
-    burgerMenu.appendChild(headerContent)
-
-    const burgerCloseButton = document.createElement('div');
-    burgerCloseButton.classList.add('burger');
-    burgerCloseButton.classList.add('active-burger');
-    burgerCloseButton.innerHTML = '<div class="burger__line"></div><div class="burger__line"></div><div class="burger__line"></div>';
-    
-    headerContent.appendChild(headerContentLogo)
-    headerContent.appendChild(burgerCloseButton)
-
-    const listNav = document.createElement('nav');
-    listNav.innerHTML = '<ul class="burger-menu__list"><li class="active"><a href="index.html">About the shelter</a></li><li><a href="our-pets.html">Our pets</a></li><li><a href="#help">Help the shelter</a></li><li><a href="#footer">Contacts</a></li></ul>'
-
-    burgerMenu.appendChild(listNav)
-
-    setTimeout(() => burgerMenu.classList.add('burger-menu_show'), 50)
-    bodyB.appendChild(burgerMenu);
-
-    const blackoutBurger = document.createElement('div');
-    blackoutBurger.classList = 'blackout-burger';
-    blackoutBurger.appendChild(burgerMenu);
-    bodyB.appendChild(blackoutBurger);
-
-    bodyB.style.overflow = 'hidden';
-
-    const liAll = document.querySelectorAll('li');
-    for(li of liAll) {
-        li.addEventListener('click', function BtnClick() {
-            burgerMenu.classList.remove('burger-menu_show');
-            burgerCloseButton.classList.remove('active-burger');
-            burgerButton.classList.remove('active-burger');
-            bodyB.style.overflow = 'auto';
-            setTimeout(() => {
-                bodyB.removeChild(blackoutBurger);
-                burgerCloseButton.removeEventListener('click', BtnClick);
-            }, 1000) 
-        }) 
+        console.log(this);
     }
 
-    burgerCloseButton.addEventListener('click', function BtnClick() {
-        burgerMenu.classList.remove('burger-menu_show');
-        burgerCloseButton.classList.remove('active-burger');
-        burgerButton.classList.remove('active-burger');
-        bodyB.style.overflow = 'auto';
+    onMenuItemClick() {
+        this.burgerMenu.classList.remove('burger-menu_show');
+        this.burgerCloseButton.classList.remove('active-burger');
+        this.burgerOpenButton.classList.remove('active-burger');
+        this.bodyB.style.overflow = 'auto';
+    }
+
+    onBurgerOpenButtonClick() {
+        this.bodyB.style.overflow = 'hidden';
+        this.burgerOpenButton.classList.add('active-burger')
+        this.burgerCloseButton.classList.add('active-burger');
+        this.blackoutBurger.classList.add('blackout-burger_show');
+        this.burgerMenu.classList.remove('burger-menu_hidden');
+
         setTimeout(() => {
-            bodyB.removeChild(blackoutBurger);
-            burgerCloseButton.removeEventListener('click', BtnClick);
+            this.burgerMenu.classList.add('burger-menu_show');
+        }, 50);
+    }
+
+    onBurgerCloseButtonClick() {
+        this.burgerMenu.classList.remove('burger-menu_show');
+        this.burgerCloseButton.classList.remove('active-burger');
+        this.burgerOpenButton.classList.remove('active-burger');
+        this.bodyB.style.overflow = 'auto';
+
+        setTimeout(() => {
+            this.blackoutBurger.classList.remove('blackout-burger_show');
         }, 1000) 
-    })
-    
+    }
 
-    let left = window.screen.width;
-    burgerMenu.style.left = `${left}px`;
+    onWindowResize() {
+        this.left = window.screen.width;
+        this.burgerMenu.style.left = `${this.left}px`;
+    }
+}
 
-    window.addEventListener('resize', () => {
-        left = window.screen.width;
-        burgerMenu.style.left = `${left}px`;
-    })
-})
+const burger = new Burger();

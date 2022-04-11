@@ -61,5 +61,8 @@ button:hover {
     width: 52px;
     margin-left: -10px;
     background: none;
+    @media (max-width: 360px) {
+        margin-left: -21px;
+    }
 }
 
