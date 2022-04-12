@@ -881,6 +881,11 @@ button:hover {
     max-width: 90%;
   }
 }
+@media (max-width: 360px) {
+  .about__text {
+    max-width: 300px;
+  }
+}
 
 .light-l {
   background-color: #F6F6F6;
