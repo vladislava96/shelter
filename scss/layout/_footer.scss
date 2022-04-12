@@ -6,7 +6,7 @@ footer {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0 40px;
+    margin: 0 auto;
     padding-top: 56px;
     @media (max-width: 1024px) {
         max-width: 944px;
@@ -24,7 +24,6 @@ footer {
 
         }
     }
-
 }
 
 .footer-content__contacts {

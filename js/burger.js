@@ -16,8 +16,6 @@ class Burger {
         this.burgerOpenButton.addEventListener('click', () => this.onBurgerOpenButtonClick())
         this.burgerCloseButton.addEventListener('click', () => this.onBurgerCloseButtonClick())
         window.addEventListener('resize', () => this.onWindowResize())
-
-        console.log(this);
     }
 
     onMenuItemClick() {
