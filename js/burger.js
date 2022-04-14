@@ -22,7 +22,12 @@ class Burger {
         this.burgerMenu.classList.remove('burger-menu_show');
         this.burgerCloseButton.classList.remove('active-burger');
         this.burgerOpenButton.classList.remove('active-burger');
+        this.blackoutBurger.classList.remove('blackout-burger_show');
         this.bodyB.style.overflow = 'auto';
+
+        setTimeout(() => {
+            this.burgerMenu.classList.remove('burger-menu_show');
+        }, 50);
     }
 
     onBurgerOpenButtonClick() {
